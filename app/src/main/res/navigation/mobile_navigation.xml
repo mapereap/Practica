@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/Login">
+
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.poli.Registro_Fragment"
+        android:label="@string/menu_Registro"
+        tools:layout="@layout/fragment_registro_">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Login"
+        android:name="com.example.poli.Login_Fragment"
+        android:label="@string/menu_Login"
+        tools:layout="@layout/fragment_login_" />
+
+    <fragment
+        android:id="@+id/QR"
+        android:name="com.example.poli.QR_fragment"
+        android:label="@string/QR"
+        tools:layout="@layout/fragment_qr" />
+
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.poli.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+
+</navigation>
